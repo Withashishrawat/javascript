@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+   
+<!--   
+<div class="firstClass secondClass" id="myDiv">first div 
+    <p id="firstPara">first para </p>
+    <div class="secondDiv">second div</div>
+</div> -->
+
+    <script >
+
+
+          // // console.dir(document);
+
+// /* selecting elements*/
+// // let withId=document.getElementById("header") // selecting with id 
+// // console.dir(withId);
+// // console.log(withId);
+// // let withClass= document.getElementsByClassName("div-class")// selecting with class 
+// // console.dir(withClass);
+// // console.log(withClass);
+// // let tagName=document.getElementsByTagName("p")//with tag name
+// // console.dir(tagName);
+// let querySelector=document.querySelector("h1")//by querySelector. query selector give first element, ham class ko access karte hai . lagakar , aur id ko # lagakar access kar sakte hai  
+// // console.dir(querySelector);
+// // let querySelectorAll=document.querySelectorAll("p");//query selector all give all elements. id me querySelectorAll sence nahi banata
+// // console.dir(querySelectorAll);
+
+// /*properties*/
+// // let tagName=querySelector.tagName;// access tag name tag name 
+// // console.dir(tagName);
+
+// let innerText=querySelector.innerText;//access inner text
+// console.dir(innerText);
+
+// // let innerHtml=querySelector.innerHTML;
+// // console.dir(innerHtml);
+
+/*add elements*/
+// let mydiv=document.querySelector("#mydiv");//access div
+// let newElement=document.createElement("span");//create tag
+// newElement.textContent="hello world";//add content into the tag 
+// mydiv.insertAdjacentElement("beforebegin",newElement);//adjust your tag wherever you want
+// let parent=document.querySelector("#mydiv");
+// let child=document.querySelector("#fpara");
+// parent.removeChild(child);//removing 
+
+/*-----set css in js ----*/
+// let firstElement=document.querySelector(".firstDiv");
+// // firstElement.style.backgroundColor="green";//only use one property at the time
+// // firstElement.style.cssText="background-color : red; font-size :50px;";//use multiple property of css 
+// // firstElement.setAttribute("class","secondClass");//add class 
+// // firstElement.setAttribute("style","background-color:orange");//add style using  "set mathod poora jad se value ko hata deta hai".
+// // firstElement.className="ashish mahesh";  //set multiple classes
+
+// /*use of classList*/
+// firstElement.classList.add("thirdClass");//add class
+/*removing classes*/ 
+// firstElement.classList.remove("thirdClass");//remove class
+// function removeme(event){
+//     console.log(event);
+// let removingClass=document.querySelector("#myDiv");
+// removingClass.classList.remove("secondClass"); /*remove class names from elements */
+// removingClass.style.backgroundColor="red";
+// console.log(document);
+// }
+
+// let removeclass=document.addEventListener("click",removeme);
+/*---remove class names end here ---*/
+
+// firstElement.classList.toggle("fourthClass");//add  class if not present and remove class if present 
+// firstElement.classList.contains("thirdClass")//give true if present and give false if not present
+
+    </script>
+
+</body>
+</html>
